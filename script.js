@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".cta-button");
+  const filter = document.querySelector("#region-filter");
+  const storeCards = document.querySelectorAll(".store-card");
 
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -10,4 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => btn.classList.remove("is-pressed"), 320);
     });
   });
+
+  if (filter) {
+    filter.addEventListener("change", (e) => {
+      const value = e.target.value;
+      storeCards.forEach((card) => {
+        const region = card.dataset.region;
+        const show = value === "all" || region === value;
+        card.hidden = !show;
+      });
+    });
+  }
 });
