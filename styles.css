@@ -300,10 +300,10 @@ p {
 
 .store-lead {
   color: var(--muted);
-  max-width: 760px;
-  line-height: 1.6;
-  font-size: 0.9rem;
-  white-space: normal;
+  max-width: 960px;
+  line-height: 1.5;
+  font-size: clamp(0.82rem, 1.8vw, 0.92rem);
+  white-space: nowrap;
   text-align: center;
 }
 
