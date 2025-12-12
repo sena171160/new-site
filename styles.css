@@ -286,16 +286,16 @@ p {
 
 .store-list-head {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 1.25rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .store-title-block {
   display: grid;
   gap: 0.35rem;
   min-width: 280px;
+  text-align: center;
 }
 
 .store-lead {
