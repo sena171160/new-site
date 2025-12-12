@@ -131,6 +131,15 @@ p {
   filter: brightness(1.04);
 }
 
+.cta-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button.is-pressed {
+  animation: button-pop 0.32s ease;
+}
+
 .hero-photos {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -478,6 +487,21 @@ a {
   .section-title {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@keyframes button-pop {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 10px 20px rgba(244, 114, 182, 0.35);
+  }
+  50% {
+    transform: translateY(2px) scale(0.97);
+    box-shadow: 0 6px 12px rgba(124, 58, 237, 0.25);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 12px 24px rgba(244, 114, 182, 0.35);
   }
 }
 
