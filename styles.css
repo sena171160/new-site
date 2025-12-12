@@ -303,7 +303,7 @@ p {
   max-width: 760px;
   line-height: 1.6;
   font-size: 0.9rem;
-  white-space: nowrap;
+  white-space: normal;
   text-align: center;
 }
 
