@@ -313,6 +313,13 @@ p {
   font-size: 0.9rem;
 }
 
+.filter-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .filter-control select {
   appearance: none;
   border: 1px solid rgba(124, 58, 237, 0.18);
@@ -501,6 +508,10 @@ a {
 
   .store-head-actions {
     justify-items: start;
+  }
+
+  .filter-row {
+    justify-content: flex-start;
   }
 
   .store-list-head {

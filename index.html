@@ -82,22 +82,36 @@
         </div>
         <div class="store-head-actions">
           <p class="store-lead">東京・神奈川の人気店をエリア別にピックアップ。写真映え、予約しやすさ、スイーツやドリンクの充実度など、気になるポイントがすぐにわかります。</p>
-          <label class="filter-control">
-            <span>エリアで絞り込み</span>
-            <select id="region-filter">
-              <option value="all">すべて</option>
-              <option value="原宿">原宿</option>
-              <option value="元町中華街">元町中華街</option>
-              <option value="みなとみらい">みなとみらい</option>
-              <option value="池袋">池袋</option>
-              <option value="吉祥寺">吉祥寺</option>
-              <option value="渋谷">渋谷</option>
-            </select>
-          </label>
+          <div class="filter-row">
+            <label class="filter-control">
+              <span>エリアで絞り込み</span>
+              <select id="region-filter">
+                <option value="all">すべて</option>
+                <option value="原宿">原宿</option>
+                <option value="元町中華街">元町中華街</option>
+                <option value="みなとみらい">みなとみらい</option>
+                <option value="池袋">池袋</option>
+                <option value="吉祥寺">吉祥寺</option>
+                <option value="渋谷">渋谷</option>
+              </select>
+            </label>
+            <label class="filter-control">
+              <span>動物で絞り込み</span>
+              <select id="animal-filter">
+                <option value="all">すべて</option>
+                <option value="サモエド">サモエド</option>
+                <option value="フェネック">フェネック</option>
+                <option value="小動物">小動物</option>
+                <option value="フクロウ">フクロウ</option>
+                <option value="うさぎ">うさぎ</option>
+                <option value="ハリネズミ">ハリネズミ</option>
+              </select>
+            </label>
+          </div>
         </div>
       </div>
       <div class="store-grid">
-        <article class="store-card" data-region="原宿">
+        <article class="store-card" data-region="原宿" data-animal="サモエド">
           <span class="store-badge">原宿</span>
           <h3>サモエドカフェ・メロウスノー</h3>
           <p>白い雲みたいなサモエドたちと、路地裏の隠れ家でゆったり60分。フォトスタッフ常駐で推しショットが撮れます。</p>
@@ -110,7 +124,7 @@
             <span class="store-tag">スイーツ付</span>
           </div>
         </article>
-        <article class="store-card" data-region="元町中華街">
+        <article class="store-card" data-region="元町中華街" data-animal="フェネック">
           <span class="store-badge">元町中華街</span>
           <h3>フェネックカフェ・ルミエール</h3>
           <p>ジャスミン香る店内でフェネックと目を合わせてのんびり。少人数予約制で静かな時間を楽しめます。</p>
@@ -123,7 +137,7 @@
             <span class="store-tag">少人数</span>
           </div>
         </article>
-        <article class="store-card" data-region="みなとみらい">
+        <article class="store-card" data-region="みなとみらい" data-animal="小動物">
           <span class="store-badge">みなとみらい</span>
           <h3>アニタッチ 横浜ワールドポーターズ</h3>
           <p>ひよこ、ウサギ、カピバラまで勢ぞろい。時間無制限で、家族でゆっくり動物との休日を楽しめます。</p>
@@ -136,7 +150,7 @@
             <span class="store-tag">屋内広々</span>
           </div>
         </article>
-        <article class="store-card" data-region="池袋">
+        <article class="store-card" data-region="池袋" data-animal="フクロウ">
           <span class="store-badge">池袋</span>
           <h3>フクロウカフェ・フライト</h3>
           <p>静かな照明の中でフクロウと近距離で触れ合い。スタッフが腕乗せ体験をサポートしてくれます。</p>
@@ -149,7 +163,7 @@
             <span class="store-tag">初心者安心</span>
           </div>
         </article>
-        <article class="store-card" data-region="吉祥寺">
+        <article class="store-card" data-region="吉祥寺" data-animal="うさぎ">
           <span class="store-badge">吉祥寺</span>
           <h3>うさぎカフェ・ピクニック</h3>
           <p>緑あふれる店内で、手ぶらピクニック気分。人懐っこいネザーランドドワーフが迎えてくれます。</p>
@@ -162,7 +176,7 @@
             <span class="store-tag">写真映え</span>
           </div>
         </article>
-        <article class="store-card" data-region="渋谷">
+        <article class="store-card" data-region="渋谷" data-animal="ハリネズミ">
           <span class="store-badge">渋谷</span>
           <h3>ハリネズミ＆ミニハリネズミの家</h3>
           <p>夜でも立ち寄れる路地裏カフェ。小さなハリネズミと手袋越しにスキンシップできる入門編スポット。</p>
