@@ -317,7 +317,7 @@ p {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .filter-control select {
@@ -511,7 +511,7 @@ a {
   }
 
   .filter-row {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .store-list-head {
